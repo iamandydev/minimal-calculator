@@ -12,9 +12,8 @@ input.addEventListener("keydown", (event) => {
   }
 });
 
-
 async function calcular() {
-  const expr = document.getElementById("expresion").value;
+  const expr = input.value;
   const resultado = await window.api.calcular(expr);
-  document.getElementById("resultado").innerText = resultado;
+  resultadoBox.innerText = resultado;
 }

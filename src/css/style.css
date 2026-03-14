@@ -69,7 +69,13 @@ button {
     justify-content: space-between;
     gap: 5px;
     box-shadow: 0px 0px 8px #676767ab;
+    -webkit-app-region: drag;
 }
+
+button{
+  -webkit-app-region: no-drag;
+}
+
 
 #btnCerrar {
     font-size: 3px;

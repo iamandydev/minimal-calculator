@@ -7,9 +7,6 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
   </head>
   <body>
@@ -22,19 +19,6 @@
     <input id="expresion" placeholder="0" autofocus />
     <h2 id="resultado"></h2>
 
-    <script>
-      input.addEventListener("keydown", (event) => {
-        if (event.key === "Enter") {
-          calcular();
-        }
-      });
-
-      async function calcular() {
-        const expr = document.getElementById("expresion").value;
-        const resultado = await window.api.calcular(expr);
-        document.getElementById("resultado").innerText = resultado;
-      }
-    </script>
     <script src="../renderer.js"></script>
   </body>
 </html>
