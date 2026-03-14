@@ -112,3 +112,5 @@ dist-packages/
 electron.main.js
 dist/
 
+#node
+packages-lock.json
