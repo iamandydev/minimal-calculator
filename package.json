@@ -4,8 +4,9 @@
   "description": "",
   "main": "src/main.js",
   "scripts": {
-    "start": "electron .",
-    "win-build": "electron-packager . calculator --platform=win32 --arch=x64 --out=dist --overwrite --icon=assets/imgs/icon.ico"
+    "start": "electron src/main.js",
+    "win-build": "electron-packager . Calculator --platform=win32 --arch=x64 --out=dist --overwrite --prune=true --icon=src/assets/imgs/icon.ico",
+    "lin-build": "electron-packager . Calculator --platform=linux --arch=x64 --out=dist --overwrite --prune=true --icon=src/assets/imgs/icon.ico"
   },
   "keywords": ["calculator"],
   "author": "Andy.Dev",
