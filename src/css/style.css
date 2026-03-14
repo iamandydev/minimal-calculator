@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 20px;
+    background-color: #333;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+    padding-right: 5px;
+    border: 0px transparent solid;
+    background: transparent;
+    width: 100%;
+    height: 40px;
+    color: #d8d8d8;
+    font-weight: 200;
+    font-size: 30px;
+    text-align: right;
+    margin: 30px 0px 0px 0px;
+}
+
+input::selection,
+input:active {
+    border: 0px transparent solid;
+}
+
+input::placeholder {
+    color: #ededed;
+}
+
+input:focus {
+    outline: none;
+    /* Borde azul al enfocar */
+}
+
+button {
+    padding: 10px 10px;
+    background: #4b0082;
+    border-radius: 18px;
+    font-size: 30px;
+    color: #fff;
+    border: 0px transparent solid;
+}
+
+#resultado {
+    padding-right: 5px;
+    border: 0px transparent solid;
+    background: transparent;
+    width: 100%;
+    height: 40px;
+    font-size: 40px;
+    color: #fff;
+    text-align: right;
+}
+
+#barra-superior {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 10px;
+    width: calc(100% - 10px);
+    padding: 5px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    box-shadow: 0px 0px 8px #676767ab;
+}
+
+#btnCerrar {
+    font-size: 3px;
+    background: darkred;
+    border-radius: solid 1.5px rgb(222, 0, 0);
+    color: rgb(120, 120, 120);
+    border: none;
+    width: 16px;
+    height: 16px;
+    padding: 2px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 11px;
+    cursor: pointer;
+
+    -webkit-app-region: no-drag;
+}
+
+#btnCerrar:hover {
+    background: red;
+    color: white;
+}
+
+.fa-grip-vertical {
+    width: 20px;
+    height: 20px;
+    font-weight: 100;
+    font-size: 12px;
+    color: rgba(220, 220, 220, 0.814);
+    -webkit-app-region: drag;
+    user-select: none;
+}
