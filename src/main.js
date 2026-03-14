@@ -4,6 +4,7 @@ const path = require("path");
 
 let win;
 
+/* Build a Window */
 function createWindow() {
   win = new BrowserWindow({
     width: 400,
@@ -17,11 +18,13 @@ function createWindow() {
     },
   });
 
-  win.loadFile("index.html");
+  /* Load HTML view file */
+  win.loadFile("views/index.html");
 }
 
 app.whenReady().then(createWindow);
 
+/* Function to close window */
 ipcMain.on("cerrar-app", () => {
   if (win) {
     win.close();
